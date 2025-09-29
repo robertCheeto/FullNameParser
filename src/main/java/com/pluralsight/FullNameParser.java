@@ -10,8 +10,10 @@ public class FullNameParser {
     System.out.print("Please enter your full name: ");
     String fullName = keyboard.nextLine().trim();
 
-    String[] parsedNames = fullName.split(Pattern.quote(""));
-        System.out.println(parsedNames);
+    // need to use the array index numbers to split strings into different variables to print
+        // also need to figure out how to print first and last name when no middle name is given
+    String[] parsedNames = fullName.split("\\s+");
+        System.out.println(parsedNames[0]);
 
 
 
